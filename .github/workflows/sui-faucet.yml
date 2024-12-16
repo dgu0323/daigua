@@ -9,6 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # 检出代码到工作目录
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # 赋予脚本执行权限并运行脚本
     - name: Run script
       run: |
+        chmod +x ./scripts/sui-faucet.sh
         bash ./scripts/sui-faucet.sh
