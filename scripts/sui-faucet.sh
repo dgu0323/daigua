@@ -23,6 +23,6 @@ for recipient in "${recipients[@]}"; do
         echo "Successfully sent gas to $recipient"
     fi
 
-    sleep 30
+    sleep 60
 done
 
